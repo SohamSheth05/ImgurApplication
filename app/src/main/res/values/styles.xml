@@ -1,0 +1,57 @@
+<resources>
+    <!-- Base com.example.imgur.application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="TextInputEditTextMainStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusBottomEnd">@dimen/dp_2</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/dp_2</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/dp_2</item>
+        <item name="boxCornerRadiusTopStart">@dimen/dp_2</item>
+        <item name="hintTextAppearance">@style/TextAppearance.Shrine.TextInputLayout.HintText</item>
+    </style>
+
+    <style name="Widget.Shrine.TextInputLayout" parent="TextInputEditTextMainStyle">
+        <item name="boxStrokeColor">@color/selector_login_edittext</item>
+    </style>
+    <style name="TextAppearance.Shrine.TextInputLayout.HintText" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">@color/red_color</item>
+        <item name="android:colorAccent">@color/red_color</item>
+    </style>
+    <style name="Widget.Shrine.TextInputLayout_2" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintTextAppearance">@style/TextAppearance.Shrine.TextInputLayout.HintText</item>
+        <item name="boxStrokeColor">@color/red_color</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/dp_2</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/dp_2</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/dp_2</item>
+        <item name="boxCornerRadiusTopStart">@dimen/dp_2</item>
+
+    </style>
+    <style name="ProgressBarStyle" parent="@android:style/Widget.ProgressBar.Horizontal"/>
+
+    <style name="AVLoadingIndicatorView">
+        <item name="minWidth">48dip</item>
+        <item name="maxWidth">48dip</item>
+        <item name="minHeight">48dip</item>
+        <item name="maxHeight">48dip</item>
+        <item name="indicatorName">BallPulseIndicator</item>
+    </style>
+    <style name="CustomTextAppearance" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">@dimen/sp_10</item>
+        <item name="android:layout_marginTop">@dimen/dp_10</item>
+        <item name="android:layout_marginBottom">@dimen/dp_10</item>
+        <item name="android:textColor">@color/red_color</item>
+        <item name="android:textColorHint">@color/red_color</item>
+        <item name="android:cacheColorHint">@color/red_color</item>
+        <item name="android:colorAccent">@color/red_color</item>
+        <item name="android:colorControlActivated">@color/red_color</item>
+        <item name="android:colorActivatedHighlight">@color/red_color</item>
+        <item name="android:colorControlNormal">@color/red_color</item>
+        <item name="android:colorControlHighlight">@color/red_color</item>
+        <item name="android:colorBackgroundCacheHint">@color/red_color</item>
+
+    </style>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Imgur Application</string>
+    <string name="search_image">Search Image</string>
+    <string name="comments">Comments</string>
+    <string name="search_image_view">Search Image View</string>
+    <string name="image_details">Image Details</string>
+</resources>

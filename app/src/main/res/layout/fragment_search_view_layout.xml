@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_color"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/black_color">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/dp_5"
+                app:srcCompat="@drawable/ic_back" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/search_image_view"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/sp_22"
+                android:textColor="@color/white_color"/>
+            <androidx.appcompat.widget.AppCompatImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/dp_5"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_back" />
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ILSearchImage"
+            style="@style/Widget.Shrine.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:textColorHint="@color/red_color"
+            app:hintTextAppearance="@style/CustomTextAppearance">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtSearchImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@android:drawable/ic_menu_search"
+                android:hint="@string/search_image"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:paddingStart="@dimen/dp_20"
+                android:paddingTop="@dimen/dp_15"
+                android:paddingEnd="@dimen/dp_20"
+                android:paddingBottom="@dimen/dp_15"
+                android:singleLine="true"
+                android:textAlignment="viewStart"
+                android:textColor="@color/red_color"
+                android:textColorHint="@color/red_color"
+                android:textSize="@dimen/sp_14" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewImages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_15"/>
+    </LinearLayout>
+</layout>

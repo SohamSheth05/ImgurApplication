@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FontStyle">
+        <attr name="fontName" format="string"/>
+        <attr name="boldornot" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="RotateLoading">
+        <attr name="loading_width" format="dimension"/>
+        <attr name="loading_color" format="color"/>
+        <attr name="shadow_position" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="SpannedGridLayoutManager">
+        <attr name="android:orientation"/>
+        <attr name="spanCount"/>
+        <attr name="aspectRatio" format="string"/>
+    </declare-styleable>
+
+    <!-- <declare-styleable name="CircleIndicator">
+         <attr name="ci_width" format="dimension" />
+         <attr name="ci_height" format="dimension" />
+         <attr name="ci_margin" format="dimension" />
+         <attr name="ci_animator" format="reference" />
+         <attr name="ci_animator_reverse" format="reference" />
+         <attr name="ci_drawable" format="reference" />
+         <attr name="ci_drawable_unselected" format="reference" />
+     </declare-styleable>-->
+
+    <declare-styleable name="ActionSheets">
+        <attr name="actionSheetStyle" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="ActionSheet">
+        <attr name="actionSheetBackground" format="color|reference"/>
+        <attr name="cancelButtonBackground" format="color|reference"/>
+        <attr name="otherButtonTopBackground" format="color|reference"/>
+        <attr name="otherButtonMiddleBackground" format="color|reference"/>
+        <attr name="otherButtonBottomBackground" format="color|reference"/>
+        <attr name="otherButtonSingleBackground" format="color|reference"/>
+        <attr name="cancelButtonTextColor" format="color|reference"/>
+        <attr name="otherButtonTextColor" format="color|reference"/>
+        <attr name="actionSheetPadding" format="dimension|reference"/>
+        <attr name="otherButtonSpacing" format="dimension|reference"/>
+        <attr name="cancelButtonMarginTop" format="dimension|reference"/>
+        <attr name="actionSheetTextSize" format="dimension|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="MaskedImageView">
+        <attr name="mask" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="riv_corner_radius" format="dimension"/>
+        <attr name="riv_corner_radius_top_left" format="dimension"/>
+        <attr name="riv_corner_radius_top_right" format="dimension"/>
+        <attr name="riv_corner_radius_bottom_left" format="dimension"/>
+        <attr name="riv_corner_radius_bottom_right" format="dimension"/>
+        <attr name="riv_border_width" format="dimension"/>
+        <attr name="riv_border_color" format="color"/>
+        <attr name="riv_mutate_background" format="boolean"/>
+        <attr name="riv_oval" format="boolean"/>
+        <attr name="android:scaleType"/>
+        <attr name="riv_tile_mode">
+            <enum name="clamp" value="0"/>
+            <enum name="repeat" value="1"/>
+            <enum name="mirror" value="2"/>
+        </attr>
+        <attr name="riv_tile_mode_x">
+            <enum name="clamp" value="0"/>
+            <enum name="repeat" value="1"/>
+            <enum name="mirror" value="2"/>
+        </attr>
+        <attr name="riv_tile_mode_y">
+            <enum name="clamp" value="0"/>
+            <enum name="repeat" value="1"/>
+            <enum name="mirror" value="2"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="AVLoadingIndicatorView">
+        <attr name="minWidth" format="dimension"/>
+        <attr name="maxWidth" format="dimension"/>
+        <attr name="minHeight" format="dimension"/>
+        <attr name="maxHeight" format="dimension"/>
+        <attr name="indicatorName" format="string"/>
+        <attr name="indicatorColor" format="color"/>
+    </declare-styleable>
+
+
+    <!--          Tabs Style                -->
+
+    <declare-styleable name="stl_SmartTabLayout">
+        <attr name="stl_indicatorAlwaysInCenter" format="boolean"/>
+        <attr name="stl_indicatorWithoutPadding" format="boolean"/>
+        <attr name="stl_indicatorInFront" format="boolean"/>
+        <attr name="stl_indicatorInterpolation" format="enum">
+            <enum name="smart" value="0"/>
+            <enum name="linear" value="1"/>
+        </attr>
+        <attr name="stl_indicatorGravity" format="enum">
+            <enum name="bottom" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="center" value="2"/>
+        </attr>
+        <attr name="stl_indicatorColor" format="color"/>
+        <attr name="stl_indicatorColors" format="reference"/>
+        <attr name="stl_indicatorThickness" format="dimension"/>
+        <attr name="stl_indicatorWidth" format="dimension">
+            <enum name="auto" value="-1"/>
+        </attr>
+        <attr name="stl_indicatorCornerRadius" format="dimension"/>
+        <attr name="stl_overlineColor" format="color"/>
+        <attr name="stl_overlineThickness" format="dimension"/>
+        <attr name="stl_underlineColor" format="color"/>
+        <attr name="stl_underlineThickness" format="dimension"/>
+        <attr name="stl_dividerColor" format="color"/>
+        <attr name="stl_dividerColors" format="reference"/>
+        <attr name="stl_dividerThickness" format="dimension"/>
+        <attr name="stl_defaultTabBackground" format="reference"/>
+        <attr name="stl_defaultTabTextAllCaps" format="boolean"/>
+        <attr name="stl_defaultTabTextColor" format="color|reference"/>
+        <attr name="stl_defaultTabTextSize" format="dimension"/>
+        <attr name="stl_defaultTabTextHorizontalPadding" format="dimension"/>
+        <attr name="stl_defaultTabTextMinWidth" format="dimension"/>
+        <attr name="stl_customTabTextLayoutId" format="reference"/>
+        <attr name="stl_customTabTextViewId" format="reference"/>
+        <attr name="stl_distributeEvenly" format="boolean"/>
+        <attr name="stl_clickable" format="boolean"/>
+        <attr name="stl_titleOffset" format="dimension">
+            <enum name="auto_center" value="-1"/>
+        </attr>
+        <attr name="stl_drawDecorationAfterTab" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="RevealLayout">
+        <attr name="revealId" format="reference"/>
+        <attr name="revealDuration" format="integer"/>
+        <attr name="revealGravity">
+            <flag name="top" value="0x30"/>
+            <flag name="bottom" value="0x50"/>
+            <flag name="left" value="0x03"/>
+            <flag name="right" value="0x05"/>
+            <flag name="center_vertical" value="0x10"/>
+            <flag name="fill_vertical" value="0x70"/>
+            <flag name="center_horizontal" value="0x01"/>
+            <flag name="fill_horizontal" value="0x07"/>
+            <flag name="center" value="0x11"/>
+            <flag name="fill" value="0x77"/>
+            <flag name="clip_vertical" value="0x80"/>
+            <flag name="clip_horizontal" value="0x08"/>
+            <flag name="start" value="0x00800003"/>
+            <flag name="end" value="0x00800005"/>
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="DateRangeMonthView">
+        <attr name="title_color" format="color" />
+        <attr name="week_color" format="color" />
+        <attr name="range_color" format="color" />
+        <attr name="selected_date_circle_color" format="color" />
+        <attr name="selected_date_color" format="color" />
+        <attr name="default_date_color" format="color" />
+        <attr name="range_date_color" format="color" />
+        <attr name="disable_date_color" format="color" />
+        <attr name="enable_time_selection" format="boolean" />
+        <attr name="text_size_title" format="dimension" />
+        <attr name="text_size_week" format="dimension" />
+        <attr name="text_size_date" format="dimension" />
+        <attr name="header_bg" format="integer" />
+        <attr name="calendar_tag" format="string" />
+        <attr name="week_offset" format="integer" />
+        <attr name="enable_past_date" format="boolean" />
+        <attr name="editable" format="boolean" />
+    </declare-styleable>
+</resources>
